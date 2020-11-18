@@ -50,6 +50,28 @@ namespace GitHubÖvning
 
             Console.WriteLine(string.Join(',', firstArray.Reverse()));
 
+
+            string[] monthsArray = new string[] { "Jan", "Feb", "Mar", "Apr", "Maj", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec", };
+
+            string number;
+            int choice;
+
+            do
+            {
+                Console.WriteLine("Select a number from 1-12");
+                number = Console.ReadLine();
+                choice = Convert.ToInt32(number);
+
+                if (choice <= 12)
+                {
+                    Console.WriteLine(monthsArray[choice - 1]);
+
+                }
+
+            } while (choice <= 12);
+
+            
+
         }
     }
 }
